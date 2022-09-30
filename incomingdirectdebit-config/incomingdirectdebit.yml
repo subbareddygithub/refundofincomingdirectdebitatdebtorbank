@@ -1,0 +1,47 @@
+spring: 
+  api: 
+    ach operations: 
+      context-path: /ACHOperations/{achoperationsId}/Update
+      hosturl: /test
+      jolt-filename: ACH Operations959882-jolt.json
+    corporate current account: 
+      context-path: /CorporateCurrentAccount/Initiate
+      hosturl: /test
+      jolt-filename: Corporate Current Account426049-jolt.json
+    correspondent bank operations: 
+      context-path: /CorrespondentBankOperations/Initiate
+      hosturl: /test
+      jolt-filename: Correspondent Bank Operations649663-jolt.json
+    current account: 
+      context-path: /CurrentAccount/Initiate
+      hosturl: /test
+      jolt-filename: Current Account282300-jolt.json
+    financial gateway: 
+      context-path: /FinancialGateway/Initiate
+      hosturl: /test
+      jolt-filename: Financial Gateway472845-jolt.json
+    internal bank account: 
+      context-path: /InternalBankAccount/{internalbankaccountId}/Capture
+      hosturl: /test
+      jolt-filename: Internal Bank Account782798-jolt.json
+    payment execution: 
+      context-path: /PaymentExecution/Initiate
+      hosturl: /test
+      jolt-filename: Payment Execution445522-jolt.json
+    payment initation: 
+      context-path: /PaymentInitiation/Initiate
+      hosturl: /test
+      jolt-filename: Payment Initation248677-jolt.json
+    payment order: 
+      context-path: /PaymentOrder/Initiate
+      hosturl: /test
+      jolt-filename: Payment Order362159-jolt.json
+    position keeping: 
+      context-path: /PositionKeeping/Initiate
+      hosturl: /test
+      jolt-filename: Position Keeping108126-jolt.json
+  datasource: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ${mysql_pwd}
+    url: jdbc:mysql://${mysql_url}:3306/camunda
+    username: ${mysql_user}
